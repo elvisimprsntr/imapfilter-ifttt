@@ -47,7 +47,7 @@ My primary home automation system is comprised of several components:
 
 The components which are not directly connected into a home automation system are:
 
-1. Several [Trendnet](https://www.trendnet.com/) IP cameras
+1. Several [TRENDnet](https://www.trendnet.com/) IP cameras
 2. [ZoneMinder](http://www.zoneminder.com)  video camera and surveillance server
 2. [Liberty Safelert](http://www.libertysafe.com/accessory-safelert-monitoring-system-ps-17-pg-85.html) monition, door, humidity monitoring device
 3. [Kidde Remotelync](https://remotelync.kidde.com) smoke and CO alarm monitoring device
@@ -64,10 +64,10 @@ Here are some simple [BASH scripts] (https://gist.github.com/4052516) you use to
 
 There also is a very active user and developer [support forum.](http://forum.universal-devices.com)
 
-TrendNet IP Cameras
+TRENDnet IP Cameras
 -------------------
 
-[Trendnet](https://www.trendnet.com/) makes some reasonably priced wired and wireless IP cameras.  Since I can't run a dedicated PoE Ethernet cable to each camera location, I use some of their wireless IP cameras.   
+[TRENDnet](https://www.trendnet.com/) makes some reasonably priced wired and wireless IP cameras.  Since I can't run a dedicated PoE Ethernet cable to each camera location, I use some of their wireless IP cameras.   
 
 ZoneMinder
 ----------
