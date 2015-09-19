@@ -71,7 +71,7 @@ TrendNet IP Cameras
 ZoneMinder
 ----------
 
-[ZoneMinder](http://www.zoneminder.com) is an open source project aimed at DIY video camera and surveillance.  You can use analog (with an acquisition card), web, or IP cameras to record video 24/7 or only when motion is detected in the FOV.  ZM does have plans to add an API to make it easier to integrate with home automation systems, but it currently is a WIP.  Some have been successful getting the API source files installed and configured, even then there are limitation with the API in it's current form.  For example, you can change the camera recording mode from Monitor (no recording) to Modect (record on motion), but you still have to restart the server for the mode change to take effect.  In the absence of a reliable and working API, you can interact with the built in web pages or emulate the web interaction using cURL commands.  
+[ZoneMinder](http://www.zoneminder.com) is an open source project aimed at DIY video camera and surveillance.  You can use analog (with an acquisition card), web, or IP cameras to record video 24/7 or only when motion is detected in the FOV.  ZM does have plans to add an API to make it easier to integrate with home automation systems, but it currently is a WIP.  Some have been successful getting the API source files installed and configured, even then there are limitations with the API in it's current form.  For example, you can change the camera recording mode from Monitor (no recording) to Modect (record on motion), but you still have to restart the server for the mode change to take effect.  In the absence of a reliable and working API, you can interact with the built in web pages or emulate the web interaction using cURL commands.  
 
 Liberty Safelert Safe Monitoring
 --------------------------------
@@ -79,7 +79,7 @@ Liberty Safelert Safe Monitoring
 
 Kidde RemoteLync
 ----------------
-[Kidde Remotelync](https://remotelync.kidde.com) device plugs into an electrical outlet centrally located within your home.  The device monitors the unique frequencies emitted by your smoke and CO alarms.   Unlike other manufacturers remote smoke/CO alarm devices which use proprietary technology, the Kidde RemoteLync works with any smoke alarm manufactured after 1970.  Kidde also has a dedicated mobile app for push, email, and SMS notifications.   
+[Kidde RemoteLync](https://remotelync.kidde.com) device plugs into an electrical outlet centrally located within your home.  The device monitors the unique frequencies emitted by your smoke and CO alarms.   Unlike other manufacturers remote smoke/CO alarm devices which use proprietary technology, the Kidde RemoteLync works with any smoke alarm manufactured after 1970.  Kidde also has a dedicated mobile app for push, email, and SMS notifications.   
 
 Rheem EcoNet Wifi Module
 ------------------------
