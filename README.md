@@ -47,7 +47,7 @@ My primary home automation system is comprised of several components:
 The components which are not directly connected into a home automation system are:
 
 1. Several [Trendnet](https://www.trendnet.com/) IP cameras
-2. [ZoneMinder](http://www.zoneminder.com)  video camera and surveillance server.
+2. [ZoneMinder](http://www.zoneminder.com)  video camera and surveillance server
 2. [Liberty Safelert](http://www.libertysafe.com/accessory-safelert-monitoring-system-ps-17-pg-85.html) monition, door, humidity monitoring device
 3. [Kidde Remotelync](https://remotelync.kidde.com) smoke and CO alarm monitoring device
 4. [Rheem EcoNet WiFi Water Heater Module](http://www.rheem.com/EcoNet/wificenter) 
@@ -75,11 +75,11 @@ ZoneMinder
 
 Liberty Safelert Safe Monitoring
 --------------------------------
-[Liberty](www.libertysafe.com) makes some great Made in the USA safes, and also has a separate Safelert device to monitor motion, door opening, humidity, temperature, etc.  There is a dedicated mobile app which you can set up push notification, email, and SMS text message alerts. 
+[Liberty](www.libertysafe.com) makes some great Made in the USA safes and also has a separate Safelert device to monitor motion, door opening, humidity, temperature, etc.  There is a dedicated mobile app which you can set up push notification, email, and SMS text message alerts. 
 
 Kidde RemoteLync
 ----------------
-[Kidde Remotelync](https://remotelync.kidde.com) device plugs into an electrical outlet centrally location within your home.  The device monitors the unique frequencies emitted by your smoke and CO alarms.   Unlike other manufacturers remote smoke/CO alarm devices which use proprietary technology, the Kidde RemoteLync works with any smoke alarm manufactured after 1970.  Kidde also has a dedicated mobile app for push, email, and SMS notifications.   
+[Kidde Remotelync](https://remotelync.kidde.com) device plugs into an electrical outlet centrally located within your home.  The device monitors the unique frequencies emitted by your smoke and CO alarms.   Unlike other manufacturers remote smoke/CO alarm devices which use proprietary technology, the Kidde RemoteLync works with any smoke alarm manufactured after 1970.  Kidde also has a dedicated mobile app for push, email, and SMS notifications.   
 
 Rheem EcoNet Wifi Module
 ------------------------
