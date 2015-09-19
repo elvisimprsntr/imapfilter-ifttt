@@ -43,11 +43,11 @@ My primary home automation system is comprised of several components:
 
 1. [Universal Devices](https://www.universal-devices.com)  ISY-994i Insteon/Zigbee/Zwave embedded lighting controller
 2. [Elk Products](www.elkproducts.com) Elk-M1 Gold security alarm panel
-3. Several [Trendnet](https://www.trendnet.com/) IP cameras
 
 The components which are not directly connected into a home automation system are:
 
-1. [ZoneMinder](http://www.zoneminder.com)  video camera and surveillance server.
+1. Several [Trendnet](https://www.trendnet.com/) IP cameras
+2. [ZoneMinder](http://www.zoneminder.com)  video camera and surveillance server.
 2. [Liberty Safelert](http://www.libertysafe.com/accessory-safelert-monitoring-system-ps-17-pg-85.html) monition, door, humidity monitoring device
 3. [Kidde Remotelync](https://remotelync.kidde.com) smoke and CO alarm monitoring device
 4. [Rheem EcoNet WiFi Water Heater Module](http://www.rheem.com/EcoNet/wificenter) 
