@@ -1,18 +1,19 @@
 ifttt-imapfilter
 ================
-IFTTT IMAPFilter Lua Script to Tie Various Home Automation Devices Together
+
+Ifttt-imapfilter is a simple self hosted method for implementing IFTTT functions without having to relinquish your credentials to a company with unknown origin or intentions.
 
 About
 -----
 
-Ifttt-imapfilter is a simple self hosted method for implementing IFTTT functions without having to relinquish your credentials to a company with unknown origin or intentions.   
+Ifttt-imapfilter example Lua script is just that. No more, no less.  It is not a long term development project.  I specifically did not use any non-standard libraries (XML parsers, table manipulation, etc.) to keep it as lightweight as possible.   Also, unlike other interpreted script languages (Ruby, Perl, Python, etc), Lua does not have very good package management system.  Often one must pull packages from multiple sources, or compile from source.  
 
-I have a home automation and home security system, but I also have a few cloud connected devices which do not support one of the well accepted HA protocols or do not have a public API, but those devices do have basic email, SMS, or mobile push notification capability.  In search for a way to tie these standalone devices together with my existing systems, it seemed the least common denominator was email capability.  Obviously, this means notifications and actions will not be real time and are not appropriate for property protection or personal safety applications.  
+I have a home automation and home security system, but I also have a few cloud connected devices which do not support one of the well accepted HA protocols or do not have a public API, but those devices do have basic email, SMS, or mobile push notification capability.    
 
 Disclaimer
 ----------
 
-Ifttt-imapfilter example Lua script is just that. No more, no less.  It is not a long term development project.  I specifically did not use any non-standard libraries (XML parsers, table manipulation, etc.) to keep it as lightweight as possible.   Also, unlike other interpreted script languages (Ruby, Perl, Python, etc), Lua does not have very good package management system.  Often one must pull packages from multiple sources, or compile from source.  
+In search for a way to tie these standalone devices together with my existing systems, it seemed the least common denominator was email capability.  Obviously, this means notifications and actions will not be real time or guaranteed, thus are not appropriate for property protection or personal safety applications.  
 
 IMAPFilter
 ----------
