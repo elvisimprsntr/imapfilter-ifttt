@@ -4,17 +4,18 @@ options.subscribe = true
 -- IMAP account
 ----------------------------------------
 account = IMAP	{
-		server = 'imap.gmail.com',
-		username = 'username@gmail.com',
-		password = 'password',
+		server = ‘imap.gmail.com’,
+		username = ‘username@gmail.com’,
+		password = ‘password’,
+		ssl = 'tls1',
 		}
 
 -- ISY tables
 ----------------------------------------
 isy = 		{
 		server = '192.168.69.90',
-		username = 'username',
-		password = 'password',
+		username = ‘username’,
+		password = ‘password’,
 		}
 
 areas =         {
@@ -45,8 +46,8 @@ states =	{
 ----------------------------------------
 zm =            {
                 server = '192.168.69.85',
-                username = 'username',
-                password = 'password',
+                username = ‘username’,
+                password = ‘password’,
                 }
 
 cams =          {
