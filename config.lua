@@ -18,29 +18,29 @@ isy = 		{
 		password = ‘password’,
 		}
 
-areas =         {
-                first_floor = '1',
-                second_floor = '2',
-                third_floor = '3',
-                garage = '4',
-                }
+areas =        {
+               first_floor = '1',
+               second_floor = '2',
+               third_floor = '3',
+               garage = '4',
+               }
 
-nodes =	{
+nodes =	       {
 		all = '8730',
 		exterior = '32377',
 		garage = '27356',
 		theater = '44403',
 		}	
 			
-states =	{
-		disarmed = '0',
-		away = '1',
-		stay = '2',
-		stay_instant = '3',
-		night = '4',
-		night_instant = '5',
-		vacation = '6',
-		}		
+states =       {
+               ['0'] = 'disarmed',
+               ['1'] = 'away',
+               ['2'] = 'stay',
+               ['3'] = 'stay_instant',
+               ['4'] = 'night',
+               ['5'] = 'night_instant',
+               ['6'] = 'vacation'
+               }
 
 -- ZM tables
 ----------------------------------------
@@ -72,7 +72,7 @@ areacmd = function (isy, area)
         local s = assert(f:read('*a'))
         f:close()
         local a = string.match(s, 'type="3" area="' .. area .. '" val="(.?)"')
-        return a
+        return states[a]
         end
 
 nodecmd = function (isy, node, cmd)
@@ -136,11 +136,11 @@ results:mark_seen()
 
 -- Control camera modes
 ----------------------------------------
-armstate = areacmd(isy, areas['first_floor']) 
-if (armstate == '0') then
+armstate = areacmd(isy, areas['first_floor'])
+if (armstate == 'disarmed') then
         modecmd(zm, cams['porch'], 'Modect')
         modecmd(zm, cams['theater'], 'Monitor')
-elseif (armstate == '1' or armstate == '6') then
+elseif (armstate == 'away' or armstate == 'vacation') then
         modecmd(zm, cams['porch'], 'Modect')
         modecmd(zm, cams['theater'], 'Modect')
 else
@@ -148,9 +148,9 @@ else
         modecmd(zm, cams['theater'], 'Monitor')
 end
 armstate = areacmd(isy, areas['garage'])
-if (armstate == '0') then
+if (armstate == 'disarmed') then
         modecmd(zm, cams['garage'], 'Monitor')
-elseif (armstate == '1' or armstate == '6') then
+elseif (armstate == 'away' or armstate == 'vacation') then
         modecmd(zm, cams['garage'], 'Modect')
 else
         modecmd(zm, cams['garage'], 'Modect')
