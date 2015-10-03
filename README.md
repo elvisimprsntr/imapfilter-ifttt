@@ -23,7 +23,7 @@ The great thing about IMAP mail servers is you can perform remote searches on em
 Install IMAPFilter
 ------------------
 
-* `sudo apt-get install iampfilter`
+* `sudo apt-get install imapfilter`
 * Follow the initial setup guide [here](https://raymii.org/s/blog/Filtering_IMAP_mail_with_imapfilter.html)
 
 IMAPFilter as daemon
