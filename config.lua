@@ -83,9 +83,9 @@ nodecmd = function (isy, node, cmd)
 -- ZM functions
 ----------------------------------------                   
 modecmd = function (zm, cam, mode)
-	local cmd = 'curl -d "username=' .. zm['username'] .. '&password=' .. zm['password'] .. '&action=login&view=console" http://' .. zm['server'] .. '/zm/index.php -c zm.cookie'  
+	local cmd = 'curl -d "username=' .. zm['username'] .. '&password=' .. zm['password'] .. '&action=login&view=console" http://' .. zm['server'] .. '/zm/index.php -c ~/.imapfilter/zm.cookie'  
 	os.execute(cmd)
-	local cmd = 'curl -d "view=none&action=function&mid=' .. cam .. '&newFunction=' .. mode .. '&newEnabled=1" http://' .. zm['server'] .. '/zm/index.php -b zm.cookie'
+	local cmd = 'curl -d "view=none&action=function&mid=' .. cam .. '&newFunction=' .. mode .. '&newEnabled=1" http://' .. zm['server'] .. '/zm/index.php -b ~/.imapfilter/zm.cookie'
 	os.execute(cmd)
 	end
 
@@ -105,9 +105,8 @@ for _, mesg in ipairs(results) do
 end
 if (matches > 0) then
 	nodecmd(isy, nodes['theater'], 'DFON')
-	modecmd(zm, cams['theater'], 'Modect')
 end
-results:mark_seen()
+results:delete_messages()
 
 -- Kidde remotelync alarm
 ----------------------------------------
@@ -130,28 +129,24 @@ for _, mesg in ipairs(results) do
 end
 if (matches > 0) then
         nodecmd(isy, nodes['garage'], 'DFON')
-        modecmd(zm, cams['garage'], 'Modect')
 end
 results:mark_seen()
 
 -- Control camera modes
 ----------------------------------------
-armstate = areacmd(isy, areas['first_floor'])
+armstate = areacmd(isy, areas['first_floor']) 
 if (armstate == 'disarmed') then
         modecmd(zm, cams['porch'], 'Modect')
         modecmd(zm, cams['theater'], 'Monitor')
-elseif (armstate == 'away' or armstate == 'vacation') then
-        modecmd(zm, cams['porch'], 'Modect')
-        modecmd(zm, cams['theater'], 'Modect')
+        modecmd(zm, cams['stairwell'], 'Monitor')
 else
         modecmd(zm, cams['porch'], 'Modect')
-        modecmd(zm, cams['theater'], 'Monitor')
+        modecmd(zm, cams['theater'], 'Modect')
+        modecmd(zm, cams['stairwell'], 'Modect')
 end
 armstate = areacmd(isy, areas['garage'])
 if (armstate == 'disarmed') then
         modecmd(zm, cams['garage'], 'Monitor')
-elseif (armstate == 'away' or armstate == 'vacation') then
-        modecmd(zm, cams['garage'], 'Modect')
 else
         modecmd(zm, cams['garage'], 'Modect')
 end
