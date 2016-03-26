@@ -45,7 +45,7 @@ states =       {
 -- ZM tables
 ----------------------------------------
 zm =            {
-                server = '192.168.69.85',
+                server = '192.168.69.20',
                 username = ‘username’,
                 password = ‘password’,
                 }
