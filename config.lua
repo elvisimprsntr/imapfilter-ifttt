@@ -54,6 +54,7 @@ cams =          {
                 garage = '1',
                 porch = '2',
                 theater = '3',
+                stairwell = '4',
                 }
 
 -- IMAP filter
