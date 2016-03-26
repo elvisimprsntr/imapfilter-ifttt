@@ -20,4 +20,4 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-*/2 * * * * /usr/bin/imapfilter
+*/5 * * * * /usr/bin/imapfilter > /dev/null 2>&1
