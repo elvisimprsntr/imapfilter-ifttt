@@ -43,7 +43,7 @@ Home Automation System
 My primary home automation system is comprised of several components:
 
 1. [Universal Devices](https://www.universal-devices.com)  ISY-994i Insteon/Zigbee/Zwave embedded lighting controller
-2. [Elk Products](www.elkproducts.com) Elk-M1 Gold security alarm panel
+2. [Elk Products](http://www.elkproducts.com) Elk-M1 Gold security alarm panel
 
 The components which are not directly connected into a home automation system are:
 
